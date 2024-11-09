@@ -1,0 +1,88 @@
+
+
+
+.overlay{
+  width: max-content;
+}
+#search-bar {
+    width: 50vw;
+}.InputBox {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  resize: none;
+  box-sizing: border-box;
+  border:1px solid black;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  outline: none;
+
+}
+.SubmitButton{
+    /* background-color:rgba(132, 189, 121, 1); */
+    background-color: #000000;
+    color: white;
+    padding: 8px 8px;
+
+    text-align: center;
+    border-radius: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+    font-family:    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+
+    text-decoration: none;
+    border:none;
+  }
+  
+ 
+  .SubmitButton:hover {
+    border-radius: 16px;
+    background-color: #000000;
+    color: white;
+    transform: translateY(-1px);
+  }
+
+
+
+.keywords-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top:8px;
+  align-items: center;
+  width: 100vw;
+}
+
+.keyword-button{
+  cursor:pointer;
+  padding: 4px 8px;
+  border: 1px solid grey;
+  border-radius: 8px;
+  margin: 2px 8px;
+  font-size:16px;
+}
+.keyword-button-active {
+  border: 1px solid blue;
+}
+@media only screen and (max-width: 600px) {
+  .keyword-buttons{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .keyword-button{
+    cursor:pointer;
+    padding: 4px 8px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    margin: 2px 8px;
+    font-size:12px;
+
+  }
+  .keyword-button-active {
+    border: 1px solid blue;
+  }
+}
