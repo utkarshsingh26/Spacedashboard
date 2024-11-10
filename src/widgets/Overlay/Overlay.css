@@ -4,6 +4,10 @@
 .overlay{
   width: max-content;
 }
+.controls-container__top {
+  display: flex;
+  align-items: center; /* Align search bar and buttons vertically */
+}
 #search-bar {
     width: 50vw;
 }.InputBox {
@@ -64,9 +68,12 @@
   border-radius: 8px;
   margin: 2px 8px;
   font-size:16px;
+  background-color: #ffffff; /* White background for keyword buttons */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for visibility */
 }
 .keyword-button-active {
-  border: 1px solid blue;
+  border: 1px solid lightblue;
+  background-color: lightblue;
 }
 @media only screen and (max-width: 600px) {
   .keyword-buttons{

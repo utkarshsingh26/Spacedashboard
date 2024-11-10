@@ -199,15 +199,15 @@ const OverlayWidget = (props) => {
                            // }
 
                         }}
-                        renderInput={(params) => <TextField {...params} sx={{width: '70vw', background: "rgba(255,255,255,0.2)", color: "red",}}  label="Search by location or keyword" />}
+                        renderInput={(params) => <TextField {...params} sx={{width: '20vw', background: "#ffffff", color: "black", borderRadius: '50px'}}  label="Search the ASU Heatmap" />}
                     />
                         <LocalizationProvider dateAdapter={AdapterDayjs}>
-                            <div className="datepickerscontainer" style={{display:'flex', flexDirection:'row', justifyContent:'flex-start', width:'100%' }} sx={{display: 'flex', width: '100%' }} >
-                            <DatePicker sx={{background: "rgba(255,255,255,0.2)",  color: "red", width: '30%', marginRight: '1rem'}} className="datepicker" label= "Start Date" defaultValue={dayjs(props.startDate)} onChange={(value) => {
+                            <div className="datepickerscontainer" style={{display:'flex', flexDirection:'column', justifyContent:'flex-start', width:'50%', gap: '1rem' }} sx={{display: 'flex', width: '100%' }} >
+                            <DatePicker sx={{background: "#ffffff", color: "black", borderRadius: '50px', width: '30%', marginRight: '1rem'}} className="datepicker" label= "Pick a start date" onChange={(value) => {
                                 const newStartDateValue = value.toISOString().slice(0,10)
                                 props.setStartDate(newStartDateValue)
                             }}  />
-                            <DatePicker  sx={{background: "rgba(255,255,255,0.2)", color: "red", width:'30%'}} className="datepicker"  label = "End Date" defaultValue={dayjs(props.endDate)} onChange={(value) => {
+                            <DatePicker  sx={{background: "#ffffff", color: "black", borderRadius: '50px', width:'30%'}} className="datepicker"  label = "Pick an end date" onChange={(value) => {
                                 const newEndDateValue = value.toISOString().slice(0,10)
                                 props.setEndDate(newEndDateValue)
                             }} />
